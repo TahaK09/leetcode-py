@@ -1,4 +1,6 @@
 class Solution(object):
+
+    #an important quesion, I will redo it!
     def addBinary(self, a, b):
         # a and b strings into a list of integers
         b1 = [int(char) for char in a]
@@ -9,6 +11,7 @@ class Solution(object):
         i = len(b1) - 1
         j = len(b2) - 1
 
+        #with using "or" the loops keep going until both's elements are used up, if we use "and" then the loop will stop when one of them is used up, which is not what we want
         while i >= 0 or j >= 0:
             total = carry #total is the sum of one column = two digits + carry that came from prev column
             if i >= 0:
